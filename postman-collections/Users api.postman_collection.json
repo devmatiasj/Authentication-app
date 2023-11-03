@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "ed58b7c8-ce81-4ff2-994b-0224ef1626e6",
+		"name": "Users api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30921219"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkwMzA2MzEsImV4cCI6MTY5OTAzNDIzMX0.FAxStjMfIucnvYJ85mT3xpj01SZ2XmvW50EFC2Z_3Bo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Matias",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Juri",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "T. Caceres de allende",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/Users/matiasjuri/Desktop/images.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkwMzA2MzEsImV4cCI6MTY5OTAzNDIzMX0.FAxStjMfIucnvYJ85mT3xpj01SZ2XmvW50EFC2Z_3Bo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkwMzA2MzEsImV4cCI6MTY5OTAzNDIzMX0.FAxStjMfIucnvYJ85mT3xpj01SZ2XmvW50EFC2Z_3Bo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Matias",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Juri",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "T. caceres de allende",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "/Users/matiasjuri/Desktop/images2.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/users/654526e1a66750c1daa63413",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"654526e1a66750c1daa63413"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkwMjQ0MTAsImV4cCI6MTY5OTAyODAxMH0.lE6I42MZ60jhdTwE8nsUYPu_E0Lo90uCZDVAKErmmso",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/users/?id=654491e059e2a4ae4e683098",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "654491e059e2a4ae4e683098"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
