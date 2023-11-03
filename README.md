@@ -22,5 +22,5 @@ $ npm run start
 
 ## Use
 
-Using the shared postman collections, the login endpoint should be executed with the parameters already configured (user root) and use the token returned in the other requests (the token should be added in the 'authorization' header with the format: Bearer *token* )
+Using the shared postman-collections, the login endpoint should be executed with the parameters already configured (user root) and use the token returned in the other requests (the token should be added in the 'authorization' header with the format: Bearer *token* )
 
